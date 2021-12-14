@@ -13,10 +13,10 @@
 #ifndef MINITALK_H
 # define MINITALK_H
 
-#include <sys/types.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <signal.h>
+# include <sys/types.h>
+# include <unistd.h>
+# include <stdlib.h>
+# include <signal.h>
 
 typedef struct s_signal
 {
@@ -24,6 +24,7 @@ typedef struct s_signal
 	char			byte;
 	size_t			pid;
 }					t_signal;
+t_signal			g_bites;
 
 int		ft_strlen(const char *str);
 void	ft_putstr_fd(char *s, int fd);
